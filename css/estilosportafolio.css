@@ -1,0 +1,566 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #eeeeed;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+section{
+    width: 100%;
+    height: 95vh;
+    background-image: url("../img/");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: #545ca3;
+   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    padding: 0px 5%;
+}
+nav ul{
+    display: flex;
+}
+nav ul li a{
+    margin: 20px;
+    font-family: myriad pro 'Times New Roman', Times, serif;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+   /* border: 1px dotted #000; */
+    padding: 4px 9px;
+    border-radius: 3px;*/
+    padding: 7px 13px;
+}
+.logo{
+    font-family: sans-serif;
+    color: #000000;
+    font-size: 22px;    
+}
+.active{
+    font-weight: bold;
+    color: #fff;         /*color del texto del boton  inicio*/ 
+}
+.text-container p:nth-child(1){
+    font-family: calibri;
+    font-weight: bold;
+    color: #000;
+    font-size: 40px;
+  
+}
+.text-container p:nth-child(2){
+    font-family: calibri;
+    font-weight: bold;
+    color: #1a1a1a;
+    font-size: 60px;
+   
+}
+.text-container p:nth-child(3){
+    font-family: myriad pro regular;
+    font-weight: bold;
+    color: #403e3e;
+    font-size: 30px;
+    line-height: 30px;
+}
+.text-container p{
+    line-height: 0px;
+    margin: 45px 0px 25px;
+}
+.text-container{
+    position: absolute;
+    left: 7%;                /*corre el texto del banner a la derecha o a la izquierda */
+    top: 42%;
+    transform:translate(-13% -42%);
+}
+.text-container button{
+    width: 130px;
+    height: 42px;
+    border-radius: 10px;
+    font-family: calibri;
+    font-weight: bold;
+    font-size: 14px;
+    outline: none;
+    margin: 0px 10px;
+}
+.hire-btn{
+    border: 1px solid #373636;
+    color: #000;
+   /* transition: 0.2s;
+    cursor: pointer;*/
+}
+li a.active, li a:hover{  /* Este codigo le pone un cuadro de color rojo al boton del menu inicio*/  
+    background: #000;   /*------------ fondo del boton del menu al poner el cursor --------------------------------------*/
+    transition: .5s;     
+}
+.down-cv{
+    background-color: #0b0b0b;
+    color: #ffffff;
+    border: none;
+    /*transition: 0.2s; 
+    cursor: pointer;*/   
+}
+button:active{
+    transform: scale(1.1);
+} 
+.model{
+    height: 400px;
+    position: absolute;
+    bottom: 40px;          /*este  bottom sube la imagen que esta en el banner*/
+    left: 70%;
+    transform: translateX(-70%);
+}
+.about-container{
+    width: 80%;
+    height: 330px;
+    background-color: #545ca3;     /*fondo de Acerca de mi*/
+   /* background-image: radial-gradient(at top center, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.03) 100%), linear-gradient(to top, rgba(255,255,255,0.1) 0%, rgba(143,152,157,0.60) 100%);
+ 	background-blend-mode: normal, multiply;  */
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    display: flex;
+    margin: -3% auto 20px auto;
+    position: relative;
+    justify-content: space-evenly;
+    align-items: center;               /*centra la imagren y rel texto*/
+}
+.about-container img{
+    height: 250px;
+}
+.about-text{
+    width: 550px;    /*cuadra e texto de about-text*/
+    text-align: justify;
+}
+.about-text p:nth-child(1){
+    color: #403e3e;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 0px;
+   
+}
+.about-text p:nth-child(2){
+    color: #3e3d3d;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+   /* font-weight: bold;*/
+    line-height: 5px;  
+}
+.about-text p:nth-child(3)
+.about-text p:nth-child(4){
+    color: #7e7d7d;
+    font-family: calibri;
+    font-size: 16px;   
+}
+.about-text button{
+    width: 120px;
+    height: 40px;
+    color: #000;
+    outline: none;
+    border: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #ffffff;
+}
+.services{
+    height: 600px;
+    background-color: #eeeeed;
+    padding: 2% 10% 0px 10%;
+}
+.serivices-text p:nth-child(1){
+    font-family: calibri;
+    font-weight: bold;
+    color: #3e3d3d;
+    font-size: 25px;                  /*tamaño de servicios*/
+    line-height: 0px;
+}
+.serivices-text p:nth-child(2){
+    font-family: calibri;
+    font-weight: bold;
+    color: #3e3d3d;
+    font-size: 15px;
+    line-height: 5px;
+}
+.serivices-text p:nth-child(3){
+    font-family: calibri;
+    font-weight: bold;
+    color: #7e7d7d;
+}
+.serivices-text{
+    width: 500px;
+    margin: 50px 0px;   
+}
+.box-1, .box-2, .box-3{
+    width: 300px;
+    height: 320px;
+    background-repeat: no repeat;
+    background-size: cover;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
+   /* display: flex;*/
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box-container{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.box-1{
+    
+     background-color: #fff; /*linear-gradient(15deg, #13547a 0%, #80d0c7 100%);*/
+      /*background-image: url("../img/logotipo.jpg"); */
+}
+.box-2{
+     background-color: #fff;  /*background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);*/
+   /*background-image: url("../img/yoga-5.png");*/
+}
+.box-3{
+     background-color: #fff; /*background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);*/
+     /* background-image: url("../img/yoga-7.png");*/
+}
+.box-1 span, .box-2 span, .box-3 span {      /* circulo 1 -2-3 */ 
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;     /*color de fondo del circulo*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: calibri;
+    font-weight: bold;
+}
+.box-1 img{
+    width: 100px;
+    height: 100px;
+}
+.box-1 h4{
+    font-weight: 100;
+}
+.box-1 p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+.box-1 a{
+   font-weight: 500;
+   text-decoration: none;
+   color: #3498db; 
+}
+.box-2 img{
+    width: 100px;
+    height: 100px;
+}
+.box-2 h4{
+    font-weight: 100;
+}
+.box-2 p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+.box-2 a{
+   font-weight: 500;
+   text-decoration: none;
+   color: #3498db; 
+}
+.box-3 img{
+    width: 100px;
+    height: 100px;
+}
+.box-3 h4{
+    font-weight: 100;
+}
+.box-3 p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+.box-3 a{
+   font-weight: 500;
+   text-decoration: none;
+   color: #3498db; 
+}
+.box-1 p:nth-child(2),
+.box-2 p:nth-child(2),
+.box-3 p:nth-child(2){
+    color: #ffffff;
+    font-family: calibri;
+    font-size: 23px;
+    line-height: 0px; 
+}
+.box-1 p:nth-child(3),              
+.box-2 p:nth-child(3),
+.box-3 p:nth-child(3){
+    font-family: calibri;
+    text-align: center;
+    width: 290px;    
+    margin: 0px 0px 40px 0px;
+    color: #000;                /* Color de web design, Web Development y Security SEO */
+}
+.box-1 button,                        /*color del boton y dimensaiones*/
+.box-2 button,
+.box-3 button{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(133, 130, 130);       /*color de fondo del boton leer mas*/
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+ /*------------ Aqui comienza Projects-------------*/
+ .project{
+    background: #fff;      /*Colo el fondo a Mis proyectos donde estan las 5 imgenes*/ 
+}
+.projects__grid{
+    max-width: 1080px;
+    display: grid;
+    height: 400px;
+    grid-template-areas: 
+    "img1 img1 img2 img3"
+    "img1 img1 img4 img5";
+    gap: 10px;
+}
+.project .subtitle{
+    text-align: center;
+}
+.project__item{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+.projects__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;  /*Al colocar lel cursor en la imagen coloca una manito*/
+}
+.project__item:nth-last-of-type(1) {
+    grid-area: img1;
+
+}
+.project__item:nth-last-of-type(2) {
+    grid-area: img2;
+}
+.project__item:nth-last-of-type(3) {
+    grid-area: img3;
+}
+.project__item:nth-last-of-type(4) {
+    grid-area: img4;
+}
+.project__item:nth-last-of-type(5) {
+    grid-area: img5;
+}
+.projects__hover{   /* Este codigo pone en la esquina sup izq el texto proyecto*/
+    position: absolute;
+    background: #dc143c8c;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff; /* pone color blaanco la palabra Proyecto*/
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateY(100%);
+    cursor: pointer;
+    transition: transform .3s ease-in-out;
+}
+.project__item:hover .projects__hover{
+    transform: translateX(0%);
+}
+.projects__icon{
+    margin-top: 10px;
+    font-size: 30px;      /*Pone el texto de la palabra Proyecto centrado*/
+}
+.contact-me{
+    width: 80%;
+    height: 280px;
+    background: #545ca3;
+   /* background-image: url("../img/gradiente1.png");*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-me p{
+    color: #000;
+    font-size: 30px;
+    font-family: calibri;
+    font-weight: bold;
+    border-bottom: 2px solid #000;
+    
+}
+.contact-me button{
+    width: 150px;            /* ancho del boton blanco del catalogo*/
+    height: 40px;
+    background-color: #ffffff;       /* color del boton blanco donde esta el catalogo de productos.*/
+    outline: none;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+                 /*------------- aqui comienza el footer---------------*/
+                  /*  Aqui comienza el Footer */ 
+                 /*{
+                    margin: 0px;
+                    padding: 0px;
+                    box-sizing: border-box;
+                    font-family: 'Nunito', sans-serif;
+                  }*/
+                  footer {
+                  /*  max-width: 1280px;*/
+                    height: 40%;
+                    background:  #202020;
+                    color: white;
+                    padding: 20px;
+                    /*padding top: 40px;*/
+                   /*padding-left: 20px; */
+                  }
+
+
+                  .container-footer-all {
+                    max-width: 1060px;
+                    width: 100%;
+                     background: #282829;      /*color de fondo de Mas informacion/redes sociales/contactos */                    
+                    margin: auto;
+                    padding: 10px;
+                  
+                   
+                  }
+                  .container-body {
+                    display: flex;
+                    justify-content: space-between;
+                  }
+                  .colum1{
+                    max-width: 400px;
+                    
+                    
+                  }
+                  .colum1 h1 {
+                    font-size: 20px;
+                    text-align: left;            /*Pone el texto "Mas informacion a la izquierda"*/
+                    color: #fff;
+                  }
+                  .colum1 p{
+                    font-size: 17px;
+                    color: #fff;
+                    margin-top: 10px;
+                   /* line-height: 27px;*/
+                   text-align: justify;
+                   
+                  }
+                  .colum2{
+                    max-width: 400px;
+                  }
+                  .colum2 h1{
+                    font-size: 20px;
+                    text-align: left;
+                    color: #fff;
+                  }
+                  .row{
+                    margin-top: 20px;
+                    display: flex;
+                   
+                  }
+                  
+                  .row label {
+                    margin top: 10px;
+                    margin-left: 20px;
+                    color: #fff;            /*color blanco de la letra de las redes sociales*/ 
+                  }
+                  .row img{
+                    width: 20px;
+                    height: 20px;
+                    text-align: right;
+                    border: none; 
+                  }
+                  .colum3 {
+                    max-width: 400px;
+                   /* padding: 30px;*/                   
+                  }
+                  .colum3 h1{             /* contacto */
+                    font-size: 20px;
+                    text-align: left;
+                    color: #fff;
+                  }
+                  .row2 {
+                    margin-top: 10px;
+                    display: flex;
+                  }
+                  
+                  .row2 label{
+                    margin-top: 10px;
+                    margin-left: 20px;
+                   /* margin right: 30px;*/
+                    max-width: 400px;
+                    color: #fff;
+                  }
+                  .row2 img {
+                    width: 20px;
+                    height: 20px;
+                  }
+                  .container-footer{       /* Ancho de la barra negra del footer */
+                    max-width: 1040px;
+                    /*width: 100%;*/
+                    /*height: 15px;*/
+                    background: #101010;  /*color de fondo del container-footer*/
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 20px; 
+                    color: #fff;                /*Alto de la caja de ="container-footer" de la barra negra que esta abajo */
+                    
+                }
+               
+                .copyright h1{
+                    text-decoration: none;   /*Este codigo le quita el subrayado o la rayita que se le pone abajo*/
+                    color: white;           /* color del texto */
+                    font-size: 20px;
+                  }
+                .copyright a{
+                color: #C7C7C7;   /*Color blanco del texto "2017 Todos los derechos reservados de Articulosyogamat"*/               
+                }
+                  .information a{      /*codigo de la clase information "Informacion Compañia | Privacion y Politica | Terminos y Condiciones"*/ 
+                    text-decoration: none;   
+                    color: #C7C7C7;
+                    align-items: left;
+                  }
+                  
+                  /*Aqui comienza el smoot osea viajar por anclaje o cuando le das click a inicio se va a la seccion inicio*/ 
+                 
+                  section:nth-child(3) {  
+                  }
+                  section:nth-child(2) {   
+                  }
+                  section:nth-child(1) {  
+                  }
+
+        /*----------- Responsive Media Query ------------*/
+    @media screen and (max-width: 1100px) {
+    .container-body{
+        flex-wrap: wrap;
+        }
+        .colum2,
+        .colum3{
+            margin-top: 40px;
+        } 
+    } 
+      
+    
